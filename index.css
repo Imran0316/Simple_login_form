@@ -28,7 +28,12 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-.form:hover{
+@media(max-width:425px){
+    #Form{
+        width: 300px;
+    }
+}
+#Form:hover{
     box-shadow: 0px 0px 20px black;
     border: 1px dotted black;
     
@@ -179,6 +184,4 @@ input[type=submit]:hover~.sub-hr{
         
     }
 }
-
-
 
