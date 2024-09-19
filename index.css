@@ -1,0 +1,184 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(cargo-services-image-for-banner-showcasing-cargo-s-ZJKUR5frT8aTyfrz3NI-9Q-GTJeBQN7Su21ic7DnYa-Uw.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#Form{
+    width: 450px;
+    height: 500px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.185);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px white;
+    transition: all .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form:hover{
+    box-shadow: 0px 0px 20px black;
+    border: 1px dotted black;
+    
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+    transition: all .5s;
+    text-shadow: 0px 0px 10px black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+hr{
+    margin: 5px ;
+    transition: all .5s;
+    width: 100%;
+    box-shadow: 0px 0px 10px #fff;
+    background-color: black;
+    border: none;
+    border-radius: 5px !important;
+}
+h1:hover{
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 10px white;
+
+}
+h1:hover hr{
+    width: 40%;
+    background-color: white !important;
+    box-shadow: 0px 0px 5px black;
+
+}
+input{
+    width: 80%;
+    padding: 12px 0px ;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 18px;
+    padding-left: 5px;
+    box-shadow: 0px 0px 10px black;
+    transition: all .5s;
+
+    
+
+}
+input:hover{
+    box-shadow: 0px 0px 10px white;
+    color: white !important; 
+    border: 1px dotted black;
+
+}
+input:focus-within{
+    outline: none;
+}
+input::placeholder{
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+input:focus-within::placeholder{
+    color: transparent;
+}
+
+input[type=submit]{
+    background-color: black;
+    color : white;
+    box-shadow: 0px 0px 30px white;
+    cursor: pointer;
+    transition: all .5s;
+
+}
+input[type=submit]:hover{
+    box-shadow: 0px 0px 20px black;
+    
+    
+}
+.sub-hr{
+    width: 80%;
+    color: black;
+    transition: all .5s;
+}
+input[type=submit]:hover{
+    border-radius: 20px;
+    border-left:5px solid white;
+    border-right:5px solid white;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+}
+input[type=submit]:hover~.sub-hr{
+    width: 40% !important;
+    background-color: white !important;
+}
+
+.scrolly{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px dotted black;
+    border-left: 3px dotted black;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    animation: scroll 2s 1s infinite;
+    
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    
+}
+.scrolly:hover{
+    border-left-color: transparent;
+    border-bottom:3px dotted black;
+    animation: none;
+    border-radius: 0%;
+}
+.scrolly h1{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 28px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.158);
+
+}
+
+@keyframes scroll {
+    0%{
+        rotate: 0deg;
+        
+       
+        
+    }
+    50%{
+    border-left: 3px dotted white;
+        
+    }
+    100%{
+        rotate: 360deg;
+        
+    }
+}
+
+
+
